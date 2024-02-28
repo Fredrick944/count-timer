@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+        .img1{
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="/call-of-duty-ww2-logo-8k-o1-2932x2932.jpg">
+        <h1>COMING SOON</h1>
+        <p>Watchout for the release of Call of Duty world war 2</p>
+        <hr>
+        <p id="demo" style="font-size:30px;"></p>
+    </div>
+
+    <script>
+        var countDownDate = new Date("Mar 8, 2024 11:30:00").getTime();
+
+        var countdownFunction = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .img1{
+            width: 300px;
+            border: 2px solid white; 
+        }
+
+        hr {
+            border: 1px solid white; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #demo {
+            font-size:30px;
+            border: 1px solid white;
+            padding: 10px; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="/call-of-duty-ww2-logo-8k-o1-2932x2932.jpg">
+        <h1>COMING SOON</h1>
+        <p>Watchout for the release of Call of Duty world war 2</p>
+        <hr>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        var countDownDate = new Date("Mar 8, 2024 11:30:00").getTime();
+
+        var countdownFunction = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
